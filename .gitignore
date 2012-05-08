@@ -1,0 +1,7 @@
+bin/
+obj/
+_ReSharper.*/
+*.suo
+*.user
+Thumbs.db
+.DS_Store
