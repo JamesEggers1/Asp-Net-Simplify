@@ -30,7 +30,7 @@ Models in Simplify are of type `dynamic`. Models are set by the Presenter and ar
 ####Views
 Views in Simplify are slightly different from ASP.Net WebForms.  The same naming conventions and server tags still exist; however, Views in Simplify do not have a Code Behind file.  With Simplify, logic should be sent to the Presenter object that can be associated with the View.  To bind a Presenter to a View in Simplify, the Page directive at the top of each page needs to change to something similar to the following:
 
-    <%@Page Language="C#" Inherits="Simplify.Core.BasePage<SimpleMVP.Contacts.ReadPresenter>" %>
+    <%@Page Language="C#" Inherits="Simplify.BasePage<Simplify.Contacts.ReadPresenter>" %>
 
 In the above example, the View inherits from a Simplify BasePage generic class that takes an instance of an `IPresenter` class to bind the logic between the two components.
 
@@ -45,6 +45,13 @@ In addition to how a View is associated with a Presenter, Views can also tap int
         <label for="LastName">Last Name</label><br />
         <span><%=this.Model.LastName %></span>
     </div>
+
+Lastly, you'll have to update the PageParserFilter for the web pages.  Thankfully, this can easily be done via the `web.config`
+
+    <system.web>
+        <compilation debug="true"/>
+        <pages pageParserFilterType="Simplify.SimplifyPageParserFilter, Simplify, Version=0.0.1.0, Culture=neutral"/>
+    </system.web>
 
 ####Presenter
 Coming Soon.
