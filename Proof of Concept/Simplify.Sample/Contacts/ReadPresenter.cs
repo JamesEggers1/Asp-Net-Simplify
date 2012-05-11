@@ -1,14 +1,10 @@
-﻿using System.Web;
-
-namespace Simplify.Sample.Contacts
+﻿namespace Simplify.Sample.Contacts
 {
-    public class ReadPresenter : IPresenter
+    public class ReadPresenter : PresenterBase
     {
-        public dynamic Model { get; set; }
-
-        public void HandleRequest(HttpRequest request, HttpResponse response)
-        {
-            Model = DataSource.Contacts;
-        }
+			protected override void Get()
+			{
+				Model = DataSource.Contacts;
+			}
     }
 }
