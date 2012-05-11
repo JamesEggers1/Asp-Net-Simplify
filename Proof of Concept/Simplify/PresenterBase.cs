@@ -1,6 +1,6 @@
 ﻿using System.Web;
 
-namespace Simplify.Core
+namespace Simplify
 {
     public abstract class PresenterBase : IPresenter
     {
@@ -35,7 +35,6 @@ namespace Simplify.Core
 
                 default:
                     throw new HttpException(404, string.Format("The requested resource does not allow for Http {0} actions.", request.HttpMethod));
-                    break;
             }
         }
 

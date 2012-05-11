@@ -2,7 +2,7 @@
 using System.Web.UI;
 using StructureMap;
 
-namespace Simplify.Core
+namespace Simplify
 {
     [FileLevelControlBuilder(typeof(SimplifyPageControlBuilder))]
     public class BasePage : Page

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Dynamic;
 
-namespace Simplify.Core
+namespace Simplify
 {
     public class RequestInformation : DynamicObject
     {

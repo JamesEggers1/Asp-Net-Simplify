@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Simplify.Contacts
+namespace Simplify.Sample.Contacts
 {
     public static class DataSource
     {

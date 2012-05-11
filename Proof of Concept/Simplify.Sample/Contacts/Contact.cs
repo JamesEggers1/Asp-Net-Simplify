@@ -1,4 +1,4 @@
-﻿namespace Simplify.Contacts
+﻿namespace Simplify.Sample.Contacts
 {
     public class Contact
     {

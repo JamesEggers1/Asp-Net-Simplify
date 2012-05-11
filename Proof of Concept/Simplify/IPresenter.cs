@@ -1,6 +1,6 @@
 ﻿using System.Web;
 
-namespace Simplify.Core
+namespace Simplify
 {
     public interface IPresenter
     {

@@ -1,7 +1,7 @@
 ﻿using System.CodeDom;
 using System.Web.UI;
 
-namespace Simplify.Core
+namespace Simplify
 {
     public class SimplifyPageControlBuilder : FileLevelPageControlBuilder
     {

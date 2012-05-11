@@ -2,13 +2,12 @@
 using System.Collections;
 using System.Web.UI;
 
-namespace Simplify.Core
+namespace Simplify
 {
     public class SimplifyPageParserFilter : PageParserFilter
     {
         private string _viewBaseType;
         private DirectiveType _directiveType = DirectiveType.Unknown;
-        private bool _viewTypeControlAdded;
 
         public override void PreprocessDirective(string directiveName, IDictionary attributes) {
             base.PreprocessDirective(directiveName, attributes);

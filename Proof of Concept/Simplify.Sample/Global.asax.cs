@@ -1,8 +1,8 @@
 ﻿using System;
-using Simplify.Contacts;
+using Simplify.Sample.Contacts;
 using StructureMap;
 
-namespace Simplify
+namespace Simplify.Sample
 {
     public class Global : System.Web.HttpApplication
     {

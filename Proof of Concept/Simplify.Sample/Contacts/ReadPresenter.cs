@@ -1,7 +1,6 @@
 ﻿using System.Web;
-using Simplify.Core;
 
-namespace Simplify.Contacts
+namespace Simplify.Sample.Contacts
 {
     public class ReadPresenter : IPresenter
     {
